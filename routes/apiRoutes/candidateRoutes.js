@@ -94,7 +94,7 @@ router.post('/candidate', ({ body }, res) => {
 
 
 // Update a candidate's party
-app.put('/api/candidate/:id', (req, res) => {
+router.put('/candidate/:id', (req, res) => {
   const errors = inputCheck(req.body, 'party_id');
 
   if (errors) {
